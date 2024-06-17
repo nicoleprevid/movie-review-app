@@ -14,7 +14,7 @@ import { MovieCardComponent } from './components/movie-card/movie-card.component
 import { HomeComponent } from './components/home/home.component';
 import { MovieSearchComponent } from './components/movie-search/movie-search.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { environment } from './environments/environment';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [

@@ -3,7 +3,7 @@ import { provideAuth0 } from '@auth0/auth0-angular';
 import { AppModule } from './app/app.module';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
-import { environment } from './app/environments/environment';
+import { environment } from './environments/environment';
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
