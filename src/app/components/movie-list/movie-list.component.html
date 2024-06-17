@@ -1,0 +1,6 @@
+<p class="m-3 text-white text-xl font-extrabold"> Movies for you</p>
+<div class="flex flex-wrap justify-center  gap-3">
+    <div class="col-4" *ngFor="let movie of movies">
+      <app-movie-card [movie]="movie"></app-movie-card>
+    </div>
+  </div>

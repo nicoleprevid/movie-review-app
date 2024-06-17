@@ -1,0 +1,6 @@
+<div *ngIf="auth.user$ | async as user">
+    <div class="flex items-center space-x-2 p-2 bg-white shadow-md rounded-lg  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75">
+      <img [src]="user.picture" alt="Profile Picture" class="rounded-full w-10 h-10">
+      <span class="md:text-lg text-sm font-bold text-gray-800">{{ user.name }}</span>
+    </div>
+  </div>
