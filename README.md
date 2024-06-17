@@ -1,27 +1,93 @@
-# Movie Review App
+# Aplicativo de Revisão de Filmes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+### Funcionalidades:
 
-## Development server
+- **Autenticação e Autorização**: Utilizar Auth0 para login de usuários.
+- **Banco de Dados de Filmes**: Usar a **OMDb API** para obter informações sobre filmes.
+- **Revisões de Filmes**: Permitir que os usuários escrevam e leiam revisões de filmes.
+- **Lista de Desejos**: Permitir que os usuários adicionem filmes a uma lista de desejos.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Estrutura do Aplicativo:
 
-## Code scaffolding
+- **Página de Login/Registro**
+- **Dashboard**: Visão geral das últimas revisões e listas de desejos.
+- **Buscar Filmes**: Pesquisar filmes utilizando a OMDb API.
+- **Revisões de Filmes**: Adicionar, editar e visualizar revisões de filmes.
+- **Lista de Desejos**: Adicionar filmes à lista de desejos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Configuração do Projeto
 
-## Build
+1. **Clone o Repositório**
+   ```sh
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   cd nome-do-repositorio
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **Instale as Dependências**
+   Certifique-se de ter o Node.js e o npm instalados. Então, execute:
+   ```sh
+   npm install
+   ```
 
-## Running unit tests
+3. **Configuração do Auth0 e OMDb API**
+   - Crie uma conta no [Auth0](https://auth0.com/) e configure uma nova aplicação para obter as credenciais (Client ID, Domain).
+   - Obtenha uma chave de API da [OMDb API](http://www.omdbapi.com/apikey.aspx).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. **Configuração das Credenciais no Angular**
+   - Abra o arquivo `src/environments/environment.ts` e adicione suas credenciais do Auth0 e OMDb API:
+     ```typescript
+     export const environment = {
+       production: false,
+       auth: {
+         domain: 'your-auth0-domain',
+         clientId: 'your-auth0-client-id'
+       },
+       omdbApiKey: 'your-omdb-api-key'
+     };
+     ```
 
-## Running end-to-end tests
+5. **Inicie o Servidor de Desenvolvimento**
+   ```sh
+   npm start
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Estrutura do Código
 
-## Further help
+- **src/**
+  - **app/**: Contém os componentes principais do aplicativo.
+    - **auth/**: Componentes e serviços relacionados à autenticação.
+    - **dashboard/**: Componente do dashboard.
+    - **movie-search/**: Componente de busca de filmes.
+    - **reviews/**: Componentes para adicionar, editar e visualizar revisões de filmes.
+    - **wishlist/**: Componente da lista de desejos.
+  - **assets/**: Arquivos estáticos como imagens e estilos.
+  - **environments/**: Arquivos de configuração de ambiente.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Implementação das Funcionalidades
+
+1. **Autenticação e Autorização**
+   - Utilizar Auth0 para gerenciar o login e registro de usuários.
+   - Proteger rotas que requerem autenticação.
+
+2. **Buscar Filmes**
+   - Implementar a integração com a OMDb API para permitir a busca de filmes.
+
+3. **Revisões de Filmes**
+   - Permitir que os usuários adicionem, editem e visualizem revisões de filmes.
+   - Armazenar revisões em um banco de dados (pode ser Firebase, MongoDB, etc.).
+
+4. **Lista de Desejos**
+   - Permitir que os usuários adicionem filmes à sua lista de desejos.
+   - Armazenar a lista de desejos no banco de dados.
+
+### Tecnologias Utilizadas
+
+- **Angular**: Framework principal para o desenvolvimento do frontend.
+- **Auth0**: Serviço de autenticação e autorização.
+- **OMDb API**: Fonte de dados para informações sobre filmes.
+- **Firebase/MongoDB**: Para armazenamento de dados (opcional, dependendo da escolha).
+
+### Autores
+
+- Nicole Previd
+---
