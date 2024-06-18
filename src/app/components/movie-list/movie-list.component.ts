@@ -9,7 +9,7 @@ import { Movie } from '../movie-card/movie.interface';
 })
 export class MovieListComponent implements OnInit {
   movies: Movie[] = [];
-  movie!: Movie;
+  movie!: Movie; // nao nulo
 
   constructor(private MovieAPIService: MovieAPIService) { }
 
