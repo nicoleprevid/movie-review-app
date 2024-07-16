@@ -15,6 +15,8 @@ import { HomeComponent } from './components/home/home.component';
 import { MovieSearchComponent } from './components/movie-search/movie-search.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
+import { FiltersComponent } from './components/filters/filters.component';
+import { ButtonFilterComponent } from './components/button-filter/button-filter.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { environment } from '../environments/environment';
     MovieCardComponent,
     HomeComponent,
     MovieSearchComponent,
+    FiltersComponent,
+    ButtonFilterComponent,
 
   ],
   imports: [

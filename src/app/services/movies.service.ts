@@ -51,4 +51,29 @@ export class MovieAPIService {
       })
     );
   }
+   // Pesquisa filmes com base em filtros
+   searchMoviesByFilters(filter: any): Observable<Movie[]> {
+    let params = new HttpParams()
+      .set('api_key', this.apiKey)
+      .set('with_genres', filter.with_genres)
+      .set('page', '1');
+
+    return this.http.get<any>(`${this.apiUrl}/discover/movie`, { params }).pipe(
+      map(response => {
+        if (response && response.results) {
+          return response.results;
+        } else {
+          console.log("response.results não existe");
+          return [];
+        }
+      }),
+      catchError(error => {
+        console.log("Erro na requisição:", error);
+        return of([]);
+      })
+    );
+  }
+
+
+  
 }
