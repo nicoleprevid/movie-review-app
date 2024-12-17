@@ -1,7 +1,6 @@
 # Aplicativo de Revisão de Filmes
 
-https://youtu.be/GMVKyEcVBNo
-
+[![Watch the video](https://img.youtube.com/vi/GMVKyEcVBNo/maxresdefault.jpg)](https://www.youtube.com/watch?v=GMVKyEcVBNo)
 ### Funcionalidades:
 
 *Já implementada*
