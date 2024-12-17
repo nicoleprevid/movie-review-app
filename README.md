@@ -1,11 +1,26 @@
 # Aplicativo de Revisão de Filmes
 
+https://youtu.be/GMVKyEcVBNo
+
 ### Funcionalidades:
 
-- **Autenticação e Autorização**: Utilizar Auth0 para login de usuários.
-- **Banco de Dados de Filmes**: Usar a **OMDb API** para obter informações sobre filmes.
-- **Revisões de Filmes**: Permitir que os usuários escrevam e leiam revisões de filmes.
-- **Lista de Desejos**: Permitir que os usuários adicionem filmes a uma lista de desejos.
+*Já implementada*
+1. **Autenticação e Autorização**
+   - Utilizar Auth0 para gerenciar o login e registro de usuários.
+   - Proteger rotas que requerem autenticação.
+
+2. **Buscar Filmes**
+   - Implementar a integração com a OMDb API para permitir a busca de filmes.
+
+*A ser implementada:*
+3. **Revisões de Filmes**
+   - Permitir que os usuários adicionem, editem e visualizem revisões de filmes.
+   - Armazenar revisões em um banco de dados (pode ser Firebase, MongoDB, etc.).
+
+4. **Lista de Desejos**
+   - Permitir que os usuários adicionem filmes à sua lista de desejos.
+   - Armazenar a lista de desejos no banco de dados.
+
 
 ### Estrutura do Aplicativo:
 
@@ -63,31 +78,13 @@
   - **assets/**: Arquivos estáticos como imagens e estilos.
   - **environments/**: Arquivos de configuração de ambiente.
 
-### Implementação das Funcionalidades
-
-1. **Autenticação e Autorização**
-   - Utilizar Auth0 para gerenciar o login e registro de usuários.
-   - Proteger rotas que requerem autenticação.
-
-2. **Buscar Filmes**
-   - Implementar a integração com a OMDb API para permitir a busca de filmes.
-
-3. **Revisões de Filmes**
-   - Permitir que os usuários adicionem, editem e visualizem revisões de filmes.
-   - Armazenar revisões em um banco de dados (pode ser Firebase, MongoDB, etc.).
-
-4. **Lista de Desejos**
-   - Permitir que os usuários adicionem filmes à sua lista de desejos.
-   - Armazenar a lista de desejos no banco de dados.
-
 ### Tecnologias Utilizadas
 
 - **Angular**: Framework principal para o desenvolvimento do frontend.
 - **Auth0**: Serviço de autenticação e autorização.
 - **OMDb API**: Fonte de dados para informações sobre filmes.
-- **Firebase/MongoDB**: Para armazenamento de dados (opcional, dependendo da escolha).
 
-### Autores
+### Autor
 
 - Nicole Previd
 ---
