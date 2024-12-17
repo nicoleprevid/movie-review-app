@@ -1,0 +1,13 @@
+<div class="filters-and-search">
+  <app-movie-search 
+    (searchResults)="handleSearchResults($event)" 
+    (searchActive)="handleSearchActive($event)">
+  </app-movie-search>
+  <app-filters 
+    *ngIf="!searchActive" 
+    (filterApplied)="handleSearchResults($event)">
+  </app-filters>
+</div>
+<div class="w-full py-2">
+  <app-movie-list [movies]="movies"></app-movie-list>
+</div>

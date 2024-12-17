@@ -17,6 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
 import { FiltersComponent } from './components/filters/filters.component';
 import { ButtonFilterComponent } from './components/button-filter/button-filter.component';
+import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
+import { MoviesManagerComponent } from './components/movies-manager/movies-manager.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { ButtonFilterComponent } from './components/button-filter/button-filter.
     MovieSearchComponent,
     FiltersComponent,
     ButtonFilterComponent,
+    MovieDetailsComponent,
+    MoviesManagerComponent,
 
   ],
   imports: [

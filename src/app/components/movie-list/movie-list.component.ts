@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MovieAPIService } from 'src/app/services/movies.service';
 import { Movie } from '../movie-card/movie.interface';
 
@@ -8,7 +8,8 @@ import { Movie } from '../movie-card/movie.interface';
   styleUrls: ['./movie-list.component.css']
 })
 export class MovieListComponent implements OnInit {
-  movies: Movie[] = [];
+  @Input() movies: Movie[] = [];
+  
   movie!: Movie; // nao nulo
 
   constructor(private MovieAPIService: MovieAPIService) { }
@@ -22,15 +23,7 @@ export class MovieListComponent implements OnInit {
         console.error('Erro ao buscar os 10 primeiros filmes:', error);
       }
     );
-    // this.MovieAPIService.getDefault().subscribe(
-    //   data => {
-    //     this.movie = data; // Atualiza a lista com os 10 primeiros filmes
-    //     console.log(this.movie)
-    //   },
-    //   error => {
-    //     console.error('Erro ao buscar  o filme:', error);
-    //   }
-    // );
+
   }
 
 }
