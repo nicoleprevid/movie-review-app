@@ -1,5 +1,6 @@
 # Aplicativo de Revisão de Filmes
 
+### Video:
 [![Watch the video](https://raw.githubusercontent.com/nicoleprevid/movie-review-app/906032645baf8804a9fa074fccbb9b94b7486ae7/src/assets/Captura%20de%20tela%20.png?token=GHSAT0AAAAAAC4BMPOTUZONXFTCHIVC66CKZ3BTEMQ)](https://www.youtube.com/watch?v=GMVKyEcVBNo)
 ### Funcionalidades:
 
