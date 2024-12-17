@@ -68,18 +68,6 @@
    npm start
    ```
 
-### Estrutura do Código
-
-- **src/**
-  - **app/**: Contém os componentes principais do aplicativo.
-    - **auth/**: Componentes e serviços relacionados à autenticação.
-    - **dashboard/**: Componente do dashboard.
-    - **movie-search/**: Componente de busca de filmes.
-    - **reviews/**: Componentes para adicionar, editar e visualizar revisões de filmes.
-    - **wishlist/**: Componente da lista de desejos.
-  - **assets/**: Arquivos estáticos como imagens e estilos.
-  - **environments/**: Arquivos de configuração de ambiente.
-
 ### Tecnologias Utilizadas
 
 - **Angular**: Framework principal para o desenvolvimento do frontend.
