@@ -4,6 +4,7 @@
 ### Funcionalidades:
 
 *Já implementada*
+
 1. **Autenticação e Autorização**
    - Utilizar Auth0 para gerenciar o login e registro de usuários.
    - Proteger rotas que requerem autenticação.
@@ -12,6 +13,7 @@
    - Implementar a integração com a OMDb API para permitir a busca de filmes.
 
 *A ser implementada:*
+
 3. **Revisões de Filmes**
    - Permitir que os usuários adicionem, editem e visualizem revisões de filmes.
    - Armazenar revisões em um banco de dados (pode ser Firebase, MongoDB, etc.).
